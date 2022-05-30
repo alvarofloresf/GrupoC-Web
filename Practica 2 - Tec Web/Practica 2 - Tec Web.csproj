@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Practica_2___Tec_Web</RootNamespace>
+    <RootNamespace>Practica_3___Tec_Web</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Practica_2___Tec_Web.Controllers
+namespace Practica_3___Tec_Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
