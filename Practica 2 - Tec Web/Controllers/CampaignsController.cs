@@ -32,7 +32,7 @@ namespace Practica_3___Tec_Web.Controllers
         }*/
         
         [HttpGet]
-        [Route("restaurantes")]
+        [Route("search-partners")]
         public IActionResult GetRestaurant()
         {   
             return Ok(_campaignManager.GetSSN());
