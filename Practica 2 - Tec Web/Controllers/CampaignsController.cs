@@ -30,7 +30,14 @@ namespace Practica_3___Tec_Web.Controllers
         {
             return Ok(_campaignManager.GetSSN());
         }*/
-
+        
+        [HttpGet]
+        [Route("restaurantes")]
+        public IActionResult GetRestaurant()
+        {   
+            return Ok(_campaignManager.GetSSN());
+        }
+        
         [HttpPost]
         [Route("createCampaign")]
         public IActionResult CreateCampaign([FromBody] Logic.Models.Campaign campaign)

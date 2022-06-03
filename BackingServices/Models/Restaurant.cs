@@ -15,6 +15,6 @@ namespace BackingServices.Models
         public string logo { get; set; }
         public string phone_number { get; set; }
         public string address { get; set; }
-        public List<Day> hours { get; set; }
+        //public List<Day> hours { get; set; }
     }
 }
