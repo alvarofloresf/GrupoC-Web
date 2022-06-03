@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Logic.Models;
+using System.Collections.Generic;
 
-namespace Logic
+namespace Logic.Managers
 {
     public interface IUserManager
     {
