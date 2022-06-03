@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Practica_3___Tec_Web.Controllers
 {
-    [Route("sponsor-management")]
+    [Route("api/[controller]")]
     [ApiController]
     public class SponsorsController : ControllerBase
     {
@@ -18,10 +18,29 @@ namespace Practica_3___Tec_Web.Controllers
             _sponsorManager = sponsorManager;
         }
         [HttpGet]
-        [Route("sponsors")]
         public IActionResult GetSponsors()
         {
             return Ok(_sponsorManager.GetSponsors());
+        }
+        /*[HttpGet]
+        [Route("id-number")]
+        public IActionResult GetIdNumber()
+        {
+            return Ok(_sponsorManager.GetSSN());
+        }*/
+
+        [HttpPost]
+        [Route("createSponsor")]
+        public IActionResult CreateSponsor([FromBody] Logic.Models.Sponsor sponsor)
+        {
+            return Ok(_sponsorManager.CreateSponsor(sponsor));
+        }
+
+        [HttpPut]
+        [Route("updateSponsor")]
+        public IActionResult UpdateSponsor([FromBody] Logic.Models.Sponsor sponsor)
+        {
+            return Ok(_sponsorManager.UpdateSponsor(sponsor));
         }
     }
 }

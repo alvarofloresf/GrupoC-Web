@@ -28,5 +28,50 @@ namespace Logic.Managers
             }
             return mappedSponsors;
         }
+
+        public Logic.Models.Sponsor CreateSponsor(Logic.Models.Sponsor sponsor)
+        {
+            Database.Models.Sponsor sponsorToCreate = new Database.Models.Sponsor()
+            {
+                Id = new Guid(),
+                Name = sponsor.Name, 
+                Description = sponsor.Description,
+                PhoneNumber = sponsor.Description
+            };
+            _uow.SponsorRepository.CreateSponsor(sponsorToCreate);
+            _uow.Save();
+
+            return new Logic.Models.Sponsor()
+            {
+                Id = sponsorToCreate.Id,
+                Name = sponsorToCreate.Name,
+                Description = sponsorToCreate.Description,
+                PhoneNumber = sponsorToCreate.Description
+            };
+        }
+
+        public Logic.Models.Sponsor UpdateSponsor(Logic.Models.Sponsor sponsor)
+        {
+            Database.Models.Sponsor sponsorToUpdate = _uow.SponsorRepository.GetSponsorById(sponsor.Id);
+
+            sponsorToUpdate.Name = sponsor.Name;
+            sponsorToUpdate.Description = sponsor.Description;
+            sponsorToUpdate.PhoneNumber = sponsor.PhoneNumber;
+
+
+
+            _uow.SponsorRepository.UpdateSponsor(sponsorToUpdate);
+            _uow.Save();
+
+            return new Logic.Models.Sponsor()
+            {
+                Id = sponsorToUpdate.Id,
+                Name = sponsorToUpdate.Name,
+                Description = sponsorToUpdate.Description,
+                PhoneNumber = sponsorToUpdate.PhoneNumber
+            };
+        }
+
+        // aumentar metodo delete
     }
 }

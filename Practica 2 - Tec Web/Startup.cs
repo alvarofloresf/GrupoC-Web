@@ -34,6 +34,7 @@ namespace Practica_3___Tec_Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<SponsorManager>();
+            services.AddTransient<CampaignManager>();
             services.AddScoped<UnitOfWork>();
             services.AddDbContext<PracticeDbContext>();
             services.AddControllers();
