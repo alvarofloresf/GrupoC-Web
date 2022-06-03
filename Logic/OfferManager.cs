@@ -10,8 +10,9 @@ namespace Logic
         {
             Offers = new List<Offer>()
             {
-                new Offer() { Id = 1, Name = "Juan"},
-                new Offer() { Id = 2,Name = "Cho"},
+                new Offer() { Id = 1, Name = "Navidad", Type = "XMAS" },
+                new Offer() { Id = 2,Name = "Verano" , Type = "SUMMER" },
+                new Offer() { Id = 3,Name = "Black Friday", Type = "BFRIDAY"},
             };
         }
         public List<Offer> GetOffers()
@@ -25,7 +26,6 @@ namespace Logic
             Offers.Add(offer);
             return offer;
         }
-
         public Offer PutOffer(Offer offer)
         {
             Offer offerUpdate = Offers.Find(u => u.Id == offer.Id);
