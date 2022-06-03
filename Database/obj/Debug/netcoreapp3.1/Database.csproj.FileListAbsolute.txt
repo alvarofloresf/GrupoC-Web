@@ -11,3 +11,16 @@ C:\Users\ffalv\Desktop\WEB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.
 C:\Users\ffalv\Desktop\WEB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.pdb
 C:\Users\ffalv\Desktop\WEB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.genruntimeconfig.cache
 C:\Users\ffalv\Desktop\WEB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.csproj.AssemblyReference.cache
+E:\UCB\GrupoC-Web\Database\bin\Debug\netcoreapp3.1\Database.deps.json
+E:\UCB\GrupoC-Web\Database\bin\Debug\netcoreapp3.1\Database.runtimeconfig.json
+E:\UCB\GrupoC-Web\Database\bin\Debug\netcoreapp3.1\Database.runtimeconfig.dev.json
+E:\UCB\GrupoC-Web\Database\bin\Debug\netcoreapp3.1\Database.dll
+E:\UCB\GrupoC-Web\Database\bin\Debug\netcoreapp3.1\Database.pdb
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.csproj.AssemblyReference.cache
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.GeneratedMSBuildEditorConfig.editorconfig
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfoInputs.cache
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfo.cs
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.csproj.CoreCompileInputs.cache
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.dll
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.pdb
+E:\UCB\GrupoC-Web\Database\obj\Debug\netcoreapp3.1\Database.genruntimeconfig.cache

@@ -81,6 +81,10 @@ namespace Logic.Managers
             };
         }
 
-        //aumentar metodo delete
+        public Logic.Models.Campaign DeleteCampaign(Logic.Models.Campaign campaign)
+        {
+            Database.Models.Campaign campaignToDelete = _uow.CampaignRepository.GetCampaignById(campaign.Id);
+            
+        }
     }
 }
