@@ -12,6 +12,8 @@ namespace Database
         private IConfiguration _configuration;
 
         public DbSet<User> User { get; set; }
+        public DbSet<Sponsor> Sponsor { get; set; }
+        public DbSet<Campaign> Campaing { get; set; }
 
         public PracticeDbContext(IConfiguration configuration)
         {
