@@ -24,7 +24,7 @@ namespace Logic.Managers
                     NameCampaign = campaign.NameCampaign,
                     TypeCampaign = campaign.TypeCampaign,
                     DescriptionCampaign = campaign.DescriptionCampaign,
-                    CustomerSponsor = null,
+                    CustomerSponsorId = campaign.CustomerSponsorId,
                     Enable = campaign.Enable
                 });
             }
@@ -39,8 +39,8 @@ namespace Logic.Managers
                 NameCampaign = campaign.NameCampaign,
                 TypeCampaign = campaign.TypeCampaign,
                 DescriptionCampaign = campaign.DescriptionCampaign,
-                CustomerSponsor = null,
-                Enable = false
+                CustomerSponsorId = campaign.CustomerSponsorId,
+                Enable = "False"
             };
             _uow.CampaignRepository.CreateCampaign(campaignToCreate);
             _uow.Save();
@@ -51,7 +51,7 @@ namespace Logic.Managers
                 NameCampaign = campaignToCreate.NameCampaign,
                 TypeCampaign = campaignToCreate.TypeCampaign,
                 DescriptionCampaign = campaignToCreate.DescriptionCampaign,
-                CustomerSponsor = null, //modificar
+                CustomerSponsorId = campaignToCreate.CustomerSponsorId, //modificar
                 Enable = campaignToCreate.Enable
             };
         }
@@ -63,7 +63,7 @@ namespace Logic.Managers
             campaignToUpdate.NameCampaign = campaign.NameCampaign;
             campaignToUpdate.TypeCampaign = campaign.TypeCampaign;
             campaignToUpdate.DescriptionCampaign = campaign.DescriptionCampaign;
-            // aca agreagar el sponsor
+            campaignToUpdate.CustomerSponsorId = campaign.CustomerSponsorId;
             campaignToUpdate.Enable = campaign.Enable;
 
 
