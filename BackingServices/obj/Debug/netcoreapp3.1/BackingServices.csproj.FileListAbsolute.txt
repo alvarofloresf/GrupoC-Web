@@ -1,0 +1,10 @@
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\bin\Debug\netcoreapp3.1\BackingServices.deps.json
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\bin\Debug\netcoreapp3.1\BackingServices.dll
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\bin\Debug\netcoreapp3.1\BackingServices.pdb
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.csproj.AssemblyReference.cache
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.AssemblyInfoInputs.cache
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.AssemblyInfo.cs
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.csproj.CoreCompileInputs.cache
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.dll
+C:\Users\ffalv\Desktop\WEB\GrupoC-Web\BackingServices\obj\Debug\netcoreapp3.1\BackingServices.pdb

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Logic.Models
 {
-    internal class Sponsor
+    public class Sponsor
     {
-        public int SponsorId { get; set; }
-        public string SponsorName { get; set; }
-        public string SponsorDescription { get; set; }
-        public long SponsorPhoneNumber { get; set; }
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

@@ -1,30 +1,32 @@
-﻿using Logic.Models;
+﻿using Database;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Logic.Managers
 {
-    public class SponsorManager : ISponsorManager
+    public class SponsorManager
     {
-        public Sponsor DeleteSponsor(int userId)
+        private UnitOfWork _uow;
+        public SponsorManager(UnitOfWork uow)
         {
-            throw new NotImplementedException();
+            _uow = uow;
         }
 
-        public List<Sponsor> GetSponsors()
+        public List<Logic.Models.Sponsor> GetSponsors()
         {
-            throw new NotImplementedException();
-        }
-
-        public Sponsor PostSponsor(Sponsor user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Sponsor PutSponsor(Sponsor user)
-        {
-            throw new NotImplementedException();
+            List<Database.Models.Sponsor> sponsorFromDB = _uow.SponsorRepository.GetAllSponsors().Result;
+            List<Logic.Models.Sponsor> mappedSponsors = new List<Logic.Models.Sponsor>();
+            foreach (Database.Models.Sponsor sponsor in sponsorFromDB)
+            {
+                mappedSponsors.Add(new Logic.Models.Sponsor() 
+                {
+                    Name =  sponsor.Name,
+                    Description = sponsor.Description,
+                    PhoneNumber = sponsor.PhoneNumber
+                });
+            }
+            return mappedSponsors;
         }
     }
 }
