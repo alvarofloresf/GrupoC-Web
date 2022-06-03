@@ -22,9 +22,14 @@ namespace BackingServices.Services
                     HttpResponseMessage response = await client.GetAsync(RestaurantURL);
                     if (response.IsSuccessStatusCode)
                     {
+                        string restaurantBody = await response.Content.ReadAsStringAsync();
+                        Restaurant restaurant = JsonConvert.DeserializeObject<Restaurant>(restaurantBody);
+                        return restaurant;
+                        /*
                         var ResRestaurant = await response.Content.ReadAsStringAsync();
                         dynamic res = JsonConvert.DeserializeObject(ResRestaurant);
                         return res;
+                        */
                     }
                     else
                     {

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BackingServices\BackingServices.csproj" />
     <ProjectReference Include="..\Database\Database.csproj" />
   </ItemGroup>
 

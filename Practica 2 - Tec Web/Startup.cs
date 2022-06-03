@@ -1,3 +1,4 @@
+using BackingServices.Services;
 using Database;
 using Logic.Managers;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,7 @@ namespace Practica_3___Tec_Web
         {
             services.AddTransient<SponsorManager>();
             services.AddTransient<CampaignManager>();
+            services.AddTransient<RestaurantServices>();
             services.AddScoped<UnitOfWork>();
             services.AddDbContext<PracticeDbContext>();
             services.AddControllers();
