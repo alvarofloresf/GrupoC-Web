@@ -39,7 +39,7 @@ namespace Practica_3___Tec_Web
             services.AddDbContext<PracticeDbContext>();
             services.AddControllers();
 
-            services.AddSingleton<IUserManager, UserManager>();
+            //services.AddSingleton<IUserManager, UserManager>();
 
             services.AddSwaggerGen(options =>
             {
