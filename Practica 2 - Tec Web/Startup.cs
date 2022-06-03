@@ -1,4 +1,5 @@
-using Logic;
+using Database;
+using Logic.Managers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Practica_2___Tec_Web
+namespace Practica_3___Tec_Web
 {
     public class Startup
     {
@@ -32,9 +33,13 @@ namespace Practica_2___Tec_Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<SponsorManager>();
+            services.AddTransient<CampaignManager>();
+            services.AddScoped<UnitOfWork>();
+            services.AddDbContext<PracticeDbContext>();
             services.AddControllers();
 
-            services.AddSingleton<IUserManager, UserManager>();
+            //services.AddSingleton<IUserManager, UserManager>();
 
             services.AddSwaggerGen(options =>
             {
@@ -44,12 +49,12 @@ namespace Practica_2___Tec_Web
                 {
                     Title = $"{Configuration.GetSection("Application").GetSection("Title").Value} {groupName}",
                     Version = groupName,
-                    Description = "Practica 2 API",
+                    Description = "Practica 3 API",
                     Contact = new OpenApiContact
                     {
-                        Name = "Practica 2 Company",
+                        Name = "Practica 3 Company",
                         Email = string.Empty,
-                        Url = new Uri("https://alvaro_flores_f.com/"),
+                        Url = new Uri("https://grupoc.com/"),
                     }
                 });
             });
@@ -68,7 +73,7 @@ namespace Practica_2___Tec_Web
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Practica 2 API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Practica 3 API V1");
             });
 
             app.UseRouting();
