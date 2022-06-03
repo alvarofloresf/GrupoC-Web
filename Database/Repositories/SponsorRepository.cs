@@ -15,7 +15,7 @@ namespace Database.Repositories
             _context = context;
         }
 
-        public async Task<List<Sponsor>> GetAll()
+        public async Task<List<Sponsor>> GetAllSponsors()
         {
             return await _context.Set<Sponsor>().ToListAsync();
         }
@@ -26,7 +26,7 @@ namespace Database.Repositories
             return sponsor;
         }
 
-        public Sponsor GetById(Guid id)
+        public Sponsor GetSponsorById(Guid id)
         {
             return _context.Set<Sponsor>().Find(id);
         }

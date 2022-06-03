@@ -16,7 +16,7 @@ namespace Database.Repositories
             _context = context;
         }
 
-        public async Task<List<Campaign>> GetAll()
+        public async Task<List<Campaign>> GetAllCampaigns()
         {
             return await _context.Set<Campaign>().ToListAsync();
         }
@@ -27,7 +27,7 @@ namespace Database.Repositories
             return campaign;
         }
 
-        public Campaign GetById(Guid id)
+        public Campaign GetCampaignById(Guid id)
         {
             return _context.Set<Campaign>().Find(id);
         }

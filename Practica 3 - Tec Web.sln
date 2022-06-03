@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-BackingServices", "03-Ba
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Database", "04-Database", "{82A7EE2E-4F35-4A7F-A402-65B91B70114A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackingServices", "BackingServices\BackingServices.csproj", "{F36884C4-8BB2-4B57-AEE7-C1EE3CE08804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackingServices", "BackingServices\BackingServices.csproj", "{F36884C4-8BB2-4B57-AEE7-C1EE3CE08804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C8001DFE-9C48-4061-A8E5-D654563C8D52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{C8001DFE-9C48-4061-A8E5-D654563C8D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
