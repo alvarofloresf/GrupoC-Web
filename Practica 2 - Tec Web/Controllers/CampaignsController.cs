@@ -1,6 +1,7 @@
 ﻿using Logic.Managers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,12 @@ namespace Practica_3___Tec_Web.Controllers
     public class CampaignsController : ControllerBase
     {
         private CampaignManager _campaignManager;
-        public CampaignsController(CampaignManager campaignManager)
+        private readonly ILogger<CampaignsController> logger;
+
+        public CampaignsController(CampaignManager campaignManager, ILogger<CampaignsController> logger)
         {
             _campaignManager = campaignManager;
+            this.logger = logger;
         }
 
         [HttpGet]
