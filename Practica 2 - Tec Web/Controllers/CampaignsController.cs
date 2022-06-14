@@ -25,6 +25,7 @@ namespace Practica_3___Tec_Web.Controllers
         [HttpGet]
         public IActionResult GetCampaigns()
         {
+            logger.LogInformation("Se esta obteniendo una campania");
             return Ok(_campaignManager.GetCampaigns());
         }
 
@@ -38,7 +39,8 @@ namespace Practica_3___Tec_Web.Controllers
         [HttpGet]
         [Route("search-partners")]
         public IActionResult GetRestaurant()
-        {   
+        {
+            logger.LogInformation("Se esta obteniendo un restaurante como sponsor");
             return Ok(_campaignManager.GetSSN());
         }
         
@@ -46,6 +48,7 @@ namespace Practica_3___Tec_Web.Controllers
         [Route("createCampaign")]
         public IActionResult CreateCampaign([FromBody] Logic.Models.Campaign campaign)
         {
+            logger.LogInformation("Se esta creando una campania");
             return Ok(_campaignManager.CreateCampaign(campaign));
         }
 
@@ -53,6 +56,7 @@ namespace Practica_3___Tec_Web.Controllers
         [Route("updateCampaign")]
         public IActionResult UpdateCampaign([FromBody] Logic.Models.Campaign campaign)
         {
+            logger.LogWarning("Se esta actualizando una campania");
             return Ok(_campaignManager.UpdateCampaign(campaign));
         }
     }
